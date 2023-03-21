@@ -17,7 +17,6 @@ public:
         int begin = 0;
         int end = s.size() - 1;
         int mid = (begin + end) / 2;
-        
         return len;
     }
 
