@@ -15,14 +15,13 @@ public:
      */
     int findComplement(int num) {
         // Write your code here
-        int i = 0, bin[MAX], temp = num, bit = 1;
+        int bin[16], bit = 1;
         int res = 0;
-        while (temp != 1)
+        while (num != 1)
         {
-            res += (1 - (temp % 2)) * bit;
+            res += (1 - (num % 2)) * bit;
             bit *= 2;
-            temp /= 2;
-            i++;
+            num /= 2;
         }
 
         return res;
