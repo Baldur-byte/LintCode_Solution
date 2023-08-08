@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <vector>
 
 using namespace std;
@@ -12,5 +12,14 @@ public:
     */
     bool sequenceReconstruction(vector<int> &org, vector<vector<int>> &seqs) {
         // write your code here
+        indegree = new int[10000];
+
+    }
+private:
+    vector<vector<int>> adj;    //邻接表
+    int* indegree;              //记录每个顶点的入度
+    void addEdge(int v, int w)
+    {
+
     }
 };
